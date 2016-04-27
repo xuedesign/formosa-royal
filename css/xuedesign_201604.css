@@ -1,0 +1,329 @@
+/**
+*
+* @project    Formosa-Royal
+* @Author     Elmo Wu <hello@xuedesign.tw>
+* @copyright  2016 xuedesign studio
+* @version    v1.0 - 201604
+*
+**/
+
+/*
+========================
+通用設定
+========================
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+	margin: 0;
+	padding:0;
+	background: #fff;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size:100%;
+	line-height:24px;
+	/*color:#2a221c*/}
+a:link {text-decoration:none; color:#b76727}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+::selection { background: #b58e88; color: #fff}
+::-moz-selection { background: #b58e88; color: #fff}
+img::selection { background: transparent}
+img::-moz-selection { background: transparent}
+
+.clean{ clear:both}
+.hidden{ display:none}
+
+/*
+========================
+首頁框架
+========================
+*/
+#wrap{ 
+    display:block; 
+    width:100%}
+#header, 
+#banner, 
+#bar-brand, 
+#concainer,
+#products,
+#footer {
+    display: block;
+    width: 100%;
+    min-width: 1240px}
+#header {
+	height: 89px;
+    padding-top: 30px;
+    background: url(../images/bg_header.png) repeat-x}
+h1{
+    display: block;
+    width: 431px;
+    height: 60px;
+    margin: 0 auto;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999px}
+
+/*主視覺*/
+#banner{
+    height: 522px;
+    background: url(../images/bg_banner.png) center no-repeat #241607}
+#main-vision{
+    display: block;
+    position: relative;
+    width: 1240px;
+    height: 522px;
+    margin: 0 auto;
+    background: url(../images/pic_inside.jpg) no-repeat}
+#main-vision h2{
+    display: block;
+    position: absolute;
+    top:135px;
+    right: 10px;
+    z-index: 10;
+    width: 505px;
+    height: 119px;
+    background: url(../images/bg_h2.png) no-repeat;
+    text-indent: -9999px}
+
+/*
+========================
+主選單
+========================
+*/
+#bar-brand{
+    display: block;
+    position: relative;
+    height: 153px;
+    background: #967d79}
+.brand-item{
+    display: block;
+    padding-top: 57px;
+    text-align: center}
+.brand-item li{
+    display: inline-block;
+    height: 75px;
+    margin: 0 40px;
+    text-indent: -9999px}
+.brand-item .brand-icon-01{
+    width: 143px;
+    background: url(../images/brand_Bell-Ross.png) no-repeat}
+.brand-item .brand-icon-02{
+    width: 223px;
+    background: url(../images/brand_Girard-Perregaux.png) no-repeat}
+.brand-item .brand-icon-03{
+    width: 153px;
+    background: url(../images/brand_patek-philippe.png) no-repeat  }
+.brand-item .brand-icon-04{
+    width: 163px;
+    background: url(../images/brand_CHOPARD.png) no-repeat}
+.brand-item .brand-icon-05{
+    width: 153px;
+    background: url(../images/brand_longines.png) no-repeat}
+#navbox {
+    display: block;
+    position: absolute;
+    top:-58px;
+    left: 50%;
+    margin: 0 -263px;
+    width: 526px;
+    height: 85px;
+    background: url(../images/bg_nav.png) no-repeat;
+    -webkit-box-shadow: 0 0 10px #4b4949;
+    -moz-box-shadow: 0 0 10px #4b4949;
+    box-shadow: 0 0 10px #4b4949}
+#navbox ul{
+    display: block;
+    text-align: center;
+    padding-top: 33px}
+#navbox li{
+    display: inline;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    color: #605146;
+    letter-spacing: 1px}
+#navbox li a{
+    color: #605146;
+    text-decoration: none;
+    margin: 0 40px}
+#navbox li a:visited{
+    color: #8c8c8c;
+    text-decoration: none
+}
+#navbox li a:hover{
+    color: #f50;
+    text-decoration: underline}
+
+/*
+========================
+內文架構
+========================
+*/
+#concainer h3, #contact h3{
+    font-size: 1.375em;
+    line-height: 2em;
+    color: #967d79;
+    letter-spacing: 1px}
+#concainer h3{padding-bottom: 30px}
+#contact h3{ padding-bottom: 20px}
+#concainer p{
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 300;
+    color: #3e3931;
+    padding: 0 20px 15px 20px}
+
+/*
+========================
+品牌故事
+========================
+*/
+#profile{
+    display: block;
+    width: 1240px;
+    margin: 62px auto 20px auto}
+#my-story{
+    display: block;
+    float: left;
+    width: 565px;/*735px*/
+    padding: 0 65px 0 85px}
+#my-slider{
+    display: block;
+    float: right;
+    width: 505px;
+    padding-right: 20px}
+
+/*
+========================
+商品展示
+========================
+*/
+#products h3{
+    display: block;
+    width: 1155px;
+    margin: 0 auto;
+    padding-left: 85px}
+.products-item{
+    background: url(../images/bg_product-item.png) repeat-x}
+.box-product{
+    display: block;
+    width: 1240px;
+    margin: 0 auto}
+#patek-philippe h4{
+    display: block;
+    float: left;
+    width: 240px;
+    height: 153px;
+    background: url(../images/pic_caselogo-01.png) no-repeat;
+    text-indent: -9999px;
+    margin:66px 70px 0 219px}
+.case-first{
+    display: block;
+    float: right}
+.case-secend{
+    display: block;
+    padding-left: 115px}
+.case-first li, .case-secend li{
+    display: inline-block;
+    margin: 24px 15px 0;
+    text-align: center}
+.case-first li img, .case-secend li img{
+    border: 1px solid #e4e4e3;}
+.case-first li p, .case-secend li p{
+    text-shadow: 1px 1px 1px #e7e7e7}
+
+/*
+========================
+版權列
+========================
+*/
+#footer{
+    height: 350px;
+    background: url(../images/bg_footer.png) repeat-x}
+#foot-main{
+    display: block;
+    width: 1124px;
+    margin: 0 auto;
+    padding: 0 30px 0 86px}
+#copyright{
+    font-size: .813em;
+    font-weight: 100;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 42px}
+#contact{
+    display: block;
+    float: left;
+    padding-right: 80px}
+#contact li{
+    font-size: .938em;
+    font-weight: 100px;
+    line-height: 28px;
+    color: #CFCECD}
+#map{
+    display: block;
+    float: left}
+#map iframe{
+    width: 550px;
+    height: 212px}
+#shoptag{
+    display: block;
+    float: right;
+    width: 162px;
+    height: 212px;
+    background: url(../images/pic_shoptag.png) no-repeat}
+
+/*
+========================
+浮動頂端選單
+========================
+*/
+#top-bar{
+    position:fixed;
+	top:-65px;
+    z-index: 1000;
+	width:100%;
+	height:60px;
+	background:#7A6562}
+#menu{
+    width:1240px; 
+    margin:0 auto; 
+    line-height:50px}
+#menu h3{
+    display: block;
+    float: left;
+    width: 270px;
+    height: 37px;
+    background: url(../images/logo_topbar.png) no-repeat;
+    text-indent: -9999px;
+    margin-top: 11px}
+#menu span a{
+    display: block;
+    float: right;
+    width: 33px;
+    height: 33px;
+    background: url(../images/btn_totop.png) no-repeat;
+    text-indent: -9999px;
+    margin-top: 16px}
+#menu span a:hover{
+    background-position: 0 -33px}
+#menu ul{
+    display: block;
+    float: left;
+    padding-left: 30px}
+#menu li{
+    display: inline;
+    font-size: .938em;
+    line-height: 65px;
+    color: #fff}
+#menu a{
+    color:#fff; 
+    text-decoration: none;
+    padding:0 20px}
+#menu a:visited{
+    color:#fff; 
+    text-decoration: none}
+#menu a:hover{
+    color:#f50; 
+    text-decoration: none}
