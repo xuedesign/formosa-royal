@@ -20,8 +20,7 @@
 #products,
 #footer,
 #menu{
-    width: 100%;
-    min-width: 960px}
+     min-width: 960px}
 #banner{
     height: 404px}    
 #main-vision{
@@ -101,8 +100,8 @@
 #products,
 #footer,
 #menu{
-    width: 100%;
-    min-width: 768px}
+    min-width: 100%;
+    /*min-width: 768px*/}
 #banner{
     height: 370px}    
 #main-vision{
@@ -194,8 +193,8 @@
 #products,
 #footer,
 #menu{
-    width: 100%;
-    min-width: 480px}
+    min-width: 100%;
+    /*min-width: 480px*/}
 #banner{
     height: 400px}    
 #main-vision{
@@ -297,7 +296,7 @@
 #wrap{
     position: relative;
     padding-top: 59px;
-    min-width: 479px}
+    /*min-width: 479px*/}
 #header, 
 #banner, 
 #bar-brand, 
@@ -305,7 +304,7 @@
 #products,
 #footer,
 #menu{
-    width: 100%}
+    min-width: 100%}
 #header{
     position: fixed;
     top:0;
