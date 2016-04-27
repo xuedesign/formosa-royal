@@ -18,7 +18,9 @@
 #bar-brand, 
 #concainer,
 #products,
-#footer {
+#footer,
+#menu{
+    width: 100%;
     min-width: 960px}
 #banner{
     height: 404px}    
@@ -97,8 +99,10 @@
 #bar-brand, 
 #concainer,
 #products,
-#footer {
-    min-width: 100%}
+#footer,
+#menu{
+    width: 100%;
+    min-width: 768px}
 #banner{
     height: 370px}    
 #main-vision{
@@ -188,8 +192,10 @@
 #bar-brand, 
 #concainer,
 #products,
-#footer {
-    min-width: 100%}
+#footer,
+#menu{
+    width: 100%;
+    min-width: 480px}
 #banner{
     height: 400px}    
 #main-vision{
@@ -290,14 +296,16 @@
 @media screen and (max-width:479px){
 #wrap{
     position: relative;
-    padding-top: 59px}
+    padding-top: 59px;
+    min-width: 479px}
 #header, 
 #banner, 
 #bar-brand, 
 #concainer,
 #products,
-#footer {
-    min-width: 100%}
+#footer,
+#menu{
+    width: 100%}
 #header{
     position: fixed;
     top:0;
