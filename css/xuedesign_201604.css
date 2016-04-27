@@ -62,8 +62,14 @@ h1{
     margin: 0 auto;
     background: url(../images/logo.png) no-repeat;
     text-indent: -9999px}
+#mobilenav{ display: none}
 
-/*主視覺*/
+
+/*
+========================
+主視覺
+========================
+*/
 #banner{
     height: 522px;
     background: url(../images/bg_banner.png) center no-repeat #241607}
@@ -190,7 +196,7 @@ h1{
     display: block;
     float: right;
     width: 505px;
-    padding-right: 20px}
+    padding:0 20px 30px 0}
 
 /*
 ========================

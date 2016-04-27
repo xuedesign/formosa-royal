@@ -306,22 +306,26 @@
     padding-top: 30px;}
 #header h1{
     display: block;
-    width: 250px;
+    float: left;
+    width: 230px;
     height: 35px;
     background: url(../images/logo-s.png) no-repeat;
     margin: 0 0 0 20px;
-    padding-top: 27px}    
+    padding-top: 27px}
+#mobilenav{ display: block} 
 #banner{
     height: 350px}    
 #main-vision{
     width: 100%;
     height: 370px}
 #main-vision h2{
-    right: 50%;
-    margin-right: -160px;
-    width: 370px;
-    height: 75px;
-    background-size: cover}    
+    top:300px;
+    left: 50%;
+    right: 0;
+    width: 300px;
+    height: 85px;
+    margin-left: -150px;
+    background: url(../images/bg_h2-s.png) no-repeat}    
 #bar-brand{
     display: none} 
 #navbox{ display: none} 
@@ -387,7 +391,9 @@
     width: 320px;
     margin: 10px auto}
 #shoptag{ float: none; margin-top: 235px}    
-#top-bar{
-    display: none}
+#top-bar{ display: none}
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2)
+{ header h1{background:url(../images/logo-s@2x.png) no-repeat; background-size:230px 35px} }
