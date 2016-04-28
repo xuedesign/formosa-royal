@@ -309,6 +309,7 @@
     position: fixed;
     top:0;
     z-index: 1500;
+    max-width:360px; 
     height: 95px;
     padding-top: 20px;
     -webkit-box-shadow: 0px 1px 10px rgba(40, 32, 20, .8);
