@@ -19,10 +19,8 @@
 <link rel="stylesheet" href="css/reset.css"/>
 <link rel="stylesheet" href="css/xuedesign_201604.css"/>
 <link rel="stylesheet" href="css/xueresponsive.css"/>
-<link rel="stylesheet" href="css/nav.css"/>
 <link rel="stylesheet" href="css/flexslider.css"/>
 <link rel="stylesheet" href="css/animate.css"/>
-
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -41,9 +39,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TNJQRN');</script>
 <!-- End Google Tag Manager -->
-    
-   <div id="wrap">
-      <div id="top-bar">
+
+    <div id="top-bar">
         <div id="menu">
            <h3>寶富鐘錶名店</h3>
             <ul>
@@ -53,26 +50,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ul>
             <span><a href="#wrap" title="返回頁首">返回頁首</a></span>
         </div>
-       </div>
-       <div id="header">
+   </div>        
+    
+   <div id="wrap">
+      <div id="header">
            <h1>寶富鐘錶名店│寶島鐘錶-台北旗艦店</h1>
-           <div id="mobilenav">
-             <nav id="nav" class="rmm style">
-                      <ul>
-                         <li><a href="#profile" title="品牌故事">品牌故事</a></li>
-                         <li><a href="#products" title="精品名錶">精品名錶</a>
-                            <ul>
-                                  <li><a href="#patek-philippe">patek-philippe</a></li>
-                                  <!--<li><a href="#Bell-Ross">Bell-Ross</a></li>
-                                  <li><a href="#Girard-Perregaux">Girard-Perregaux</a></li>
-                                  <li><a href="#CHOPARD">CHOPARD</a></li>
-                                  <li><a href="#longines">longines</a></li>-->
-                             </ul>      
-                         </li>
-                         <li><a href="#contact" title="聯絡我們">聯絡我們</a></li>
-                      </ul>
-                </nav>
-           </div>
+           <div id="mobile_btn">
+              <div id="snav">
+                  <ul>
+                      <li><a href="#main-vision" title="品牌故事">品牌故事</a>│</li>
+                      <li><a href="#my-slider" title="精品名錶">精品名錶</a>│</li>
+                      <li><a href="#footer" title="聯絡我們">聯絡我們</a></li>
+                  </ul>
+              </div>
+        </div>
        </div>
        <div id="banner">
            <div id="main-vision">
@@ -87,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <li><a href="#contact" title="聯絡我們">聯絡我們</a></li>
               </ul>
           </nav>
-           <ul class="brand-item animated Myani-02">
+           <ul id="tostory" class="brand-item animated Myani-02">
                <li class="brand-icon-01">Bell-Ross</li>
                <li class="brand-icon-02">patek-philippe</li>
                <li class="brand-icon-03">Girard-Perregaux</li>
@@ -111,6 +102,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <li><img src="images/pic_store-04.jpg"></li>
                         <li><img src="images/pic_store-05.jpg"></li>
                         <li><img src="images/pic_store-06.jpg"></li>
+                       </ul>     
                     </div>
                </div>
                <br class="clean">
@@ -190,9 +182,16 @@ $(function(){$(window).load(function(){$(window).bind("scroll resize",function()
 <script>
     wow=new WOW({animateClass:"animated",offset:100,callback:function(a){console.log("WOW: animating <"+a.tagName.toLowerCase()+">")}}),wow.init();
 </script>
-<script src="script/responsivemultimenu.js"></script>
+<script>
+  $(document).ready(function() {
+	  $(".toggle").click(function() {
+		  $(this).toggleClass("active");
+		  $(".nav").slideToggle();
+	  });
+	  $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+  });
+</script>
 <script src="script/jquery.retina.js"></script>
-<!--<script src="script/web_set.js"></script>-->
 <script type="application/ld+json">
   { 「@context" : 「http://schema.org",//不用更改
 	「@type" : 「Organization", //不用更改

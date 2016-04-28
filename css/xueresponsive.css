@@ -309,17 +309,37 @@
     position: fixed;
     top:0;
     z-index: 1500;
-    height: 59px;
-    padding-top: 30px;}
+    height: 95px;
+    padding-top: 20px;
+    -webkit-box-shadow: 0px 1px 10px rgba(40, 32, 20, .8);
+-moz-box-shadow: 0px 1px 10px rgba(40, 32, 20, .8);
+box-shadow: 0px 1px 10px rgba(40, 32, 20, .8);}
 #header h1{
     display: block;
-    float: left;
     width: 230px;
     height: 35px;
     background: url(../images/logo-s.png) no-repeat;
-    margin: 0 0 0 20px;
+    margin: 0 auto;
     padding-top: 27px}
-#mobilenav{ display: block} 
+#mobile_btn{ display: block}
+#snav{display: block}
+#snav ul{ 
+    display:block; 
+	width:320px;
+    max-height: 50px;
+    margin: -10px auto 0 auto;
+	padding:5px 0; 
+	border-top:1px solid #554329;
+    text-align: center;}
+#snav li{
+    display: inline}
+#snav li a{ 
+    padding:0 12px;
+    font-size:1.063em;
+	line-height:1.5em;
+	color:#554329;
+	text-decoration:none}
+#snav li a:hover{ background:#554329; color:#fff}
 #banner{
     height: 350px}    
 #main-vision{
@@ -332,7 +352,7 @@
     width: 300px;
     height: 85px;
     margin-left: -150px;
-    background: url(../images/bg_h2-s.png) no-repeat}    
+    background: url(../images/bg_h2-s.png) no-repeat}   
 #bar-brand{
     display: none} 
 #navbox{ display: none} 
