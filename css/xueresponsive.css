@@ -320,7 +320,7 @@
     width: 230px;
     height: 35px;
     background: url(../images/logo-s.png) no-repeat;
-    margin: 0 auto;
+    margin: 0 0 0 65px;
     padding-top: 27px}
 #mobile_btn{ display: block}
 #snav{display: block}
@@ -328,7 +328,7 @@
     display:block; 
 	width:320px;
     max-height: 50px;
-    margin: -10px auto 0 auto;
+    margin: -10px 0 0 20px;
 	padding:5px 0; 
 	border-top:1px solid #554329;
     text-align: center;}
