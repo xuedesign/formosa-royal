@@ -26,22 +26,27 @@
 #main-vision{
     width: 960px;
     height: 404px}
-.brand-item li{
+.brand-item li a{
     height: 60px;
     margin: 0 20px}
-.brand-item .brand-icon-01{
+.brand-item .brand-icon-01 a,
+.brand-item .brand-icon-01 a:hover{
     width: 114px;
-    background-size: cover}
-.brand-item .brand-icon-02{
+    background-size: cover} 
+.brand-item .brand-icon-02 a,
+.brand-item .brand-icon-02 a:hover{
     width: 178px;
     background-size: cover}
-.brand-item .brand-icon-03{
+.brand-item .brand-icon-03 a,
+.brand-item .brand-icon-03 a:hover{
     width: 122px;
     background-size: cover}
-.brand-item .brand-icon-04{
+.brand-item .brand-icon-04 a,
+.brand-item .brand-icon-04 a:hover{
     width: 130px;
     background-size: cover}
-.brand-item .brand-icon-05{
+.brand-item .brand-icon-05 a,
+.brand-item .brand-icon-05 a:hover{
     width: 122px;
     background-size: cover}
 #concainer h3{padding-bottom: 20px}  
@@ -107,22 +112,27 @@
 #main-vision{
     width: 768px;
     height: 370px}
-.brand-item li{
+.brand-item li a{
     height: 50px;
     margin: 0 10px}
-.brand-item .brand-icon-01{
+.brand-item .brand-icon-01 a,
+.brand-item .brand-icon-01 a:hover{
     width: 95px;
     background-size: cover}
-.brand-item .brand-icon-02{
+.brand-item .brand-icon-02 a,
+.brand-item .brand-icon-02 a:hover{
     width: 148px;
     background-size: cover}
-.brand-item .brand-icon-03{
+.brand-item .brand-icon-03 a,
+.brand-item .brand-icon-03 a:hover{
     width: 102px;
     background-size: cover}
-.brand-item .brand-icon-04{
+.brand-item .brand-icon-04 a,
+.brand-item .brand-icon-04 a:hover{
     width: 108px;
     background-size: cover}
-.brand-item .brand-icon-05{
+.brand-item .brand-icon-05 a,
+.brand-item .brand-icon-05 a:hover{
     width: 102px;
     background-size: cover}
 #concainer h3{padding-bottom: 20px}  
@@ -205,23 +215,28 @@
     margin-right:-253px}    
 #bar-brand{
     height: 200px}    
-.brand-item li{
+.brand-item li a{
     height: 50px;
     margin: 0 20px;
     margin-bottom: 20px}
-.brand-item .brand-icon-01{
+.brand-item .brand-icon-01 a,
+.brand-item .brand-icon-01 a:hover{
     width: 95px;
     background-size: cover}
-.brand-item .brand-icon-02{
+.brand-item .brand-icon-02 a,
+.brand-item .brand-icon-02 a:hover{
     width: 148px;
     background-size: cover}
-.brand-item .brand-icon-03{
+.brand-item .brand-icon-03 a,
+.brand-item .brand-icon-03 a:hover{
     width: 102px;
     background-size: cover}
-.brand-item .brand-icon-04{
+.brand-item .brand-icon-04 a,
+.brand-item .brand-icon-04 a:hover{
     width: 108px;
     background-size: cover}
-.brand-item .brand-icon-05{
+.brand-item .brand-icon-05 a,
+.brand-item .brand-icon-05 a:hover{
     width: 102px;
     background-size: cover}
 #concainer h3{padding-bottom: 20px}  
@@ -354,7 +369,14 @@
     margin-left: -150px;
     background: url(../images/bg_h2-s.png) no-repeat}   
 #bar-brand{
-    display: none} 
+    display: block;
+    height: 620px}
+.brand-item li{ 
+    display: block}
+.brand-item li a{
+    margin: 30px  auto}
+.brand-item li:nth-child(1) a{
+        margin: 10px auto 30px auto}   
 #navbox{ display: none} 
 #concainer h3{padding-bottom: 20px; font-size: 1.5em}  
 #concainer p{

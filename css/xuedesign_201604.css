@@ -110,28 +110,39 @@ h1{
     display: block;
     padding-top: 57px;
     text-align: center}
-.brand-item li{
-    display: inline-block;
+.brand-item li{ display: inline-block}
+.brand-item li a{
+    display: block;
     height: 75px;
     margin: 0 40px;
     text-indent:100%;
     white-space:nowrap;
     overflow:hidden}
-.brand-item .brand-icon-01{
+.brand-item .brand-icon-01 a{
     width: 143px;
     background: url(../images/brand_Bell-Ross.png) no-repeat}
-.brand-item .brand-icon-02{
+.brand-item .brand-icon-01 a:hover{
+    background: url(../images/brand_Bell-Ross-hover.png) no-repeat}
+.brand-item .brand-icon-02 a{
     width: 223px;
     background: url(../images/brand_Girard-Perregaux.png) no-repeat}
-.brand-item .brand-icon-03{
+.brand-item .brand-icon-02 a:hover{
+    background: url(../images/brand_Girard-Perregaux-hover.png) no-repeat}
+.brand-item .brand-icon-03 a{
     width: 153px;
     background: url(../images/brand_patek-philippe.png) no-repeat  }
-.brand-item .brand-icon-04{
+.brand-item .brand-icon-03 a:hover{
+    background: url(../images/brand_patek-philippe-hover.png) no-repeat  }
+.brand-item .brand-icon-04 a{
     width: 163px;
     background: url(../images/brand_CHOPARD.png) no-repeat}
-.brand-item .brand-icon-05{
+.brand-item .brand-icon-04 a:hover{
+    background: url(../images/brand_CHOPARD-hover.png) no-repeat}
+.brand-item .brand-icon-05 a{
     width: 153px;
     background: url(../images/brand_longines.png) no-repeat}
+.brand-item .brand-icon-05 a:hover{
+    background: url(../images/brand_longines-hover.png) no-repeat}
 #navbox {
     display: block;
     position: absolute;
