@@ -356,14 +356,15 @@
 	text-decoration:none}
 #snav li a:hover{ background:#554329; color:#fff}
 #banner{
-    height: 350px}    
+    height: 202px/*350px*/}    
 #main-vision{
     width: 100%;
-    height: 370px;
+    height: 202px/*370px*/;
     /*background-position: center;*/
+    background: url(../images/pic_inside-s.jpg) no-repeat;
     background-size: cover}
 #main-vision h2{
-    top:300px;
+    top:175px;
     left: 50%;
     right: 0;
     width: 300px;
