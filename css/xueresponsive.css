@@ -206,11 +206,14 @@
     min-width: 100%;
     /*min-width: 480px*/}
 #banner{
-    height: 400px}    
+    height: 512px}    
 #main-vision{
     width: 100%;
-    height: 400px}
+    height: 512px;
+    background: url(../images/pic_inside-L.jpg) no-repeat;
+    background-size: cover}
 #main-vision h2{
+    top:250px;
     right: 50%;
     margin-right:-253px}    
 #bar-brand{
@@ -356,10 +359,10 @@
 	text-decoration:none}
 #snav li a:hover{ background:#554329; color:#fff}
 #banner{
-    height: 202px/*350px*/}    
+    height: 250px/*350px*/}    
 #main-vision{
     width: 100%;
-    height: 202px/*370px*/;
+    height: 250px/*370px*/;
     /*background-position: center;*/
     background: url(../images/pic_inside-s.jpg) no-repeat;
     background-size: cover}
