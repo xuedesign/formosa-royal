@@ -292,7 +292,8 @@ overflow:hidden;
     float: left}
 #map iframe{
     width: 550px;
-    height: 212px}
+    height: 212px;
+    overflow: hidden}
 #shoptag{
     display: block;
     float: right;
