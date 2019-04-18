@@ -1,0 +1,1 @@
+$(function(){$(window).load(function(){$(window).bind("scroll resize",function(){var o=$(this),t=o.scrollTop();800>t&&$("#top-bar").stop().animate({top:"-65px"}),t>800&&$("#top-bar").stop().animate({top:"0px"})}).scroll()})});
