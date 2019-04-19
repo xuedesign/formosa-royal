@@ -31,29 +31,186 @@
 * @version    v1.5 - 201904
 *
 *=====================================
-* 0. Reset重置
-* 1. 通用設定
-* 2. 結構設定
-*       2.1 區塊設定
-*       2.2 結構文字設定
-* 3. 內容設定
-*       3.1 頂部選單
-*       3.2 Banner輪播
-*       3.3 品牌選單
-*       3.4 品牌故事
-*       3.5 瑞士名錶
-*       3.6 店面環境
-*       3.7 版權列
-*       3.8 行動版選單
-* 4. 載入動畫
-* 5. 自訂scrollbar
+* 0.Reset重置
+* 1.通用設定
+* 2.結構設定
+*       2-1.區塊設定
+*       2-2.結構文字設定
+* 3.選單設定
+*       3-1.主選單
+*       3-2.頂端浮動選單
+*       3-3.行動版選單
+* 4.內容設定
+*       4-1.頂部列
+*       4-2.Banner輪播
+*       4-3.品牌選單
+*       4-4.品牌故事
+*       4-5.瑞士名錶
+*       4-6.店面環境
+*       4-7.版權列
+* 5.載入動畫
+* 6.自訂scrollbar
 *=====================================
 **/
 
 /*
 =====================================
-Reset重置
+0. Reset重置
 =====================================
 */
 @import url("reset.css");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC");
+
+
+/*
+=====================================
+1. 通用設定
+=====================================
+*/
+html { font-size:62.5% }
+body{
+	margin: 0;
+	padding:0;
+	background: #fff;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: 1rem; /* 1rem=10px */
+	line-height:24px;
+	color:rgb(42, 34, 28)}
+/*a:link {text-decoration:none; color:#b76727}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#F50}*/
+form{margin:0; padding:0}
+image{border:0}
+::selection { background: #b58e88; color: #fff}
+::-moz-selection { background: #b58e88; color: #fff}
+img::selection { background: transparent}
+img::-moz-selection { background: transparent}
+
+.clean{ clear:both}
+.hidden{ display:none}
+
+/*
+=====================================
+2. 結構設定
+=====================================
+*/
+#wrap,
+header,
+#banner,
+#brand-link,
+footer{
+    display: block;
+    width: 100%}
+header{
+    height: 157px;
+    padding-top: 26px;
+    background: url(../images/bg_header.png) repeat-x}
+#concainer{}
+
+/*
+=====================================
+3. 選單設定
+=====================================
+*/
+/* 3-1 主選單*/
+nav{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 26px;
+    text-align: center}
+nav li{
+    display: inline;
+    font-size: 1.8rem}
+nav li a{
+    color: rgb(96, 81, 70);
+    text-decoration: none;
+    padding: 0 30px}
+nav li a:visited{}
+nav li a:hover{}
+
+/* 3-2 浮動頂端選單 */
+#top-bar{
+    position:fixed;
+	top:-65px;
+    z-index: 1000;
+	width:100%;
+	height:60px;
+	background:#7A6562}
+#menu{
+    width:1240px; 
+    margin:0 auto; 
+    line-height:50px}
+#menu h3{
+    display: block;
+    float: left;
+    width: 270px;
+    height: 37px;
+    background: url(../images/logo_topbar.png) no-repeat;
+    text-indent:100%;
+white-space:nowrap;
+overflow:hidden;
+    margin-top: 11px}
+#menu span a{
+    display: block;
+    float: right;
+    width: 33px;
+    height: 33px;
+    background: url(../images/btn_totop.png) no-repeat;
+    text-indent:100%;
+white-space:nowrap;
+overflow:hidden;
+    margin-top: 16px}
+#menu span a:hover{
+    background-position: 0 -33px}
+#menu ul{
+    display: block;
+    float: left;
+    padding-left: 30px}
+#menu li{
+    display: inline;
+    font-size: .938em;
+    line-height: 65px;
+    color: #fff}
+#menu a{
+    color:#fff; 
+    text-decoration: none;
+    padding:0 20px}
+#menu a:visited{
+    color:#fff; 
+    text-decoration: none}
+#menu a:hover{
+    color:#f50; 
+    text-decoration: none}
+
+
+
+/*
+=====================================
+3. 內容設定
+=====================================
+*/
+/** 3-1.頂端列 **/
+h1{
+    display: block;
+    margin: 0 auto;
+    width: 431px;
+    height: 60px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+
+/*
+=====================================
+4. 載入動畫
+=====================================
+*/
+
+
+/*
+=====================================
+5. 自訂scrollbar
+=====================================
+*/
