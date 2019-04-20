@@ -42,12 +42,11 @@
 *       3-3.行動版選單
 * 4.內容設定
 *       4-1.頂部列
-*       4-2.Banner輪播
-*       4-3.品牌選單
-*       4-4.品牌故事
-*       4-5.瑞士名錶
-*       4-6.店面環境
-*       4-7.版權列
+*       4-2.品牌選單
+*       4-3.品牌故事
+*       4-4.瑞士名錶
+*       4-5.店面環境
+*       4-6.版權列
 * 5.載入動畫
 * 6.自訂scrollbar
 *=====================================
@@ -97,16 +96,25 @@ img::-moz-selection { background: transparent}
 */
 #wrap,
 header,
-#banner,
-#brand-link,
+#banner_slider,
+#bar-brand,
 footer{
     display: block;
-    width: 100%}
+    width: 100%;
+    min-width: 1240px}
 header{
     height: 157px;
     padding-top: 26px;
     background: url(../images/bg_header.png) repeat-x}
-#concainer{}
+#bar-brand{
+    position: relative;
+    height: 122px;
+    background: rgb(208, 208, 208)}
+#concainer{
+    display: block;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 55px 0}
 
 /*
 =====================================
@@ -122,13 +130,43 @@ nav{
     text-align: center}
 nav li{
     display: inline;
-    font-size: 1.8rem}
-nav li a{
+    font-size: 1.8rem;
+    letter-spacing: 1px}
+nav li a,
+nav li a:visited{
     color: rgb(96, 81, 70);
     text-decoration: none;
-    padding: 0 30px}
-nav li a:visited{}
-nav li a:hover{}
+    padding: 0 30px 5px}
+nav li a:hover{
+    color: rgb(139, 67, 54)}
+.hvr-ufc {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden}
+.hvr-ufc:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: rgb(150, 125, 121);
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out}
+.hvr-ufc:hover:before, 
+.hvr-ufc:focus:before, 
+.hvr-ufc:active:before {
+    left: 0;
+    right: 0}
 
 /* 3-2 浮動頂端選單 */
 #top-bar{
@@ -188,10 +226,10 @@ overflow:hidden;
 
 /*
 =====================================
-3. 內容設定
+4. 內容設定
 =====================================
 */
-/** 3-1.頂端列 **/
+/* 4-1.頂端列 */
 h1{
     display: block;
     margin: 0 auto;
@@ -202,15 +240,58 @@ h1{
     white-space: nowrap;
     overflow: hidden}
 
+/* 4-2.品牌選單 */
+.brand-item{
+    display: block;
+    padding-top: 20px;
+    text-align: center}
+.brand-item li{ display: inline-block}
+.brand-item li a{
+    display: block;
+    height: 75px;
+    margin: 0 40px;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden}
+.brand-item .brand-icon-01 a{
+    width: 143px;
+    background: url(../images/brand_Bell-Ross.png) no-repeat}
+.brand-item .brand-icon-01 a:hover{
+    background: url(../images/brand_Bell-Ross-hover.png) no-repeat}
+.brand-item .brand-icon-02 a{
+    width: 223px;
+    background: url(../images/brand_Girard-Perregaux.png) no-repeat}
+.brand-item .brand-icon-02 a:hover{
+    background: url(../images/brand_Girard-Perregaux-hover.png) no-repeat}
+.brand-item .brand-icon-03 a{
+    width: 153px;
+    background: url(../images/brand_patek-philippe.png) no-repeat  }
+.brand-item .brand-icon-03 a:hover{
+    background: url(../images/brand_patek-philippe-hover.png) no-repeat  }
+.brand-item .brand-icon-04 a{
+    width: 163px;
+    background: url(../images/brand_CHOPARD.png) no-repeat}
+.brand-item .brand-icon-04 a:hover{
+    background: url(../images/brand_CHOPARD-hover.png) no-repeat}
+.brand-item .brand-icon-05 a{
+    width: 153px;
+    background: url(../images/brand_longines.png) no-repeat}
+.brand-item .brand-icon-05 a:hover{
+    background: url(../images/brand_longines-hover.png) no-repeat}
+/* 4-4.品牌故事 */
+/* 4-5.瑞士名錶 */
+/* 4-6.店面環境 */
+/* 4-7.版權列 */
+
 /*
 =====================================
-4. 載入動畫
+5. 載入動畫
 =====================================
 */
 
 
 /*
 =====================================
-5. 自訂scrollbar
+6. 自訂scrollbar
 =====================================
 */

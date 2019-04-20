@@ -1,5 +1,5 @@
 //圖片輪播
-loadjs('script/lib/jquery.flexslider.js', function() {
+loadjs(['css/flexslider.css','script/lib/jquery.flexslider.js'], function() {
   $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide"});
