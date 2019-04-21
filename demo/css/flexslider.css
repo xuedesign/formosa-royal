@@ -46,6 +46,17 @@ html[xmlns] .slides {display: block;}
 .flexslider .slides li{ display:none; width:100%; height:520px}
 .flexslider .slides li a{display:block;width:100%; height:520px}
 .carousel li {margin-right: 5px}
+.flexslider .slides li.ban-01,
+.flexslider .slides li.ban-02,
+.flexslider .slides li.ban-03{
+    background-position: top center;
+    background-size: contain}
+.flexslider .slides li.ban-01{
+    background: url(../images/banner-01.jpg) no-repeat}
+.flexslider .slides li.ban-02{
+    background: url(../images/banner-02.jpg) no-repeat}
+.flexslider .slides li.ban-03{
+    background: url(../images/banner-03.jpg) no-repeat}
 
 
 /* Direction Nav */
@@ -68,8 +79,39 @@ html[xmlns] .slides {display: block;}
 .flex-control-paging li a.flex-active { background: #fce4c6; cursor: default; /*-webkit-box-shadow: inset 2px 2px 1px #990030;-moz-box-shadow: inset 2px 2px 1px #334E21; box-shadow: inset 2px 2px 1px #334E21*/}
 
 
+@media (max-width:1500px) { 
+.flexslider .slides li.ban-01,
+.flexslider .slides li.ban-02,
+.flexslider .slides li.ban-03{
+    background-size: 150%;
+    background-position: top center}
+}
 
-@media screen and (max-width: 860px) {
+@media (max-width:1100px) { /*1000*/
+.flexslider .slides li.ban-01,
+.flexslider .slides li.ban-02,
+.flexslider .slides li.ban-03{
+    background-size: 200%;
+    background-position: top center}
+}
+
+@media (max-width:800px) { /*750*/
+.flexslider .slides li{ 
+    height:400px}
+}
+
+@media (max-width: 600px) { /*573*/
+.flexslider .slides li{ height:316px}
+}
+
+@media (max-width: 420px) { /*360*/
+.flexslider .slides li{ height:194px}
+}
+
+@media (max-width: 321px) { /*300*/
+.flexslider .slides li{ height:163px}
+}
+/*@media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
   .flex-direction-nav .flex-next {opacity: 1; right: 0;}
-}
+}*/

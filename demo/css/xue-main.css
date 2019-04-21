@@ -113,8 +113,12 @@ header{
 #concainer{
     display: block;
     width: 1240px;
+    min-height: 1000px;
     margin: 0 auto;
     padding: 55px 0}
+footer{
+    height: 350px;
+    background: url(../images/bg_footer.png) repeat-x}
 
 /*
 =====================================
@@ -278,10 +282,62 @@ h1{
     background: url(../images/brand_longines.png) no-repeat}
 .brand-item .brand-icon-05 a:hover{
     background: url(../images/brand_longines-hover.png) no-repeat}
+
 /* 4-4.品牌故事 */
+#concainer h3, 
+#contact h3{
+    font-size: 2.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: rgb(150, 125, 121);
+    letter-spacing: 1px}
+#concainer h3{padding-bottom: 30px}
+#concainer p{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: rgb(62, 57, 49);
+    padding: 0 20px 15px 20px}
+
 /* 4-5.瑞士名錶 */
+
 /* 4-6.店面環境 */
+
 /* 4-7.版權列 */
+#foot-main{
+    display: block;
+    width: 1124px;
+    margin: 0 auto;
+    padding: 0 30px}
+#copyright{
+    font-size: 1.3rem;
+    line-height: 32px;
+    color: rgb(110, 88, 84);
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 42px}
+#contact{
+    display: block;
+    float: left;
+    padding-right: 25px}
+#contact h3{ padding-bottom: 20px}
+#contact li{
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: rgb(62, 57, 49)}
+#map{
+    display: block;
+    float: left}
+#map iframe{
+    width: 550px;
+    height: 212px;
+    overflow: hidden}
+#shoptag{
+    display: block;
+    float: right;
+    width: 162px;
+    height: 212px;
+    background: url(../images/pic_shoptag.png) no-repeat}
 
 /*
 =====================================
