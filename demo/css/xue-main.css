@@ -232,8 +232,6 @@ nav li a:hover{
     color:#f50; 
     text-decoration: none}
 
-
-
 /*
 =====================================
 4. 內容設定
@@ -302,6 +300,7 @@ h1{
     font-size: 1.7rem;
     line-height: 2.6rem;
     font-weight: 300;
+    text-align: justify;
     color: rgb(62, 57, 49);
     padding: 0 50px 15px 20px}
 #box_brand-info{
@@ -388,3 +387,19 @@ h1{
 6. 自訂scrollbar
 =====================================
 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0}
+::-webkit-scrollbar-thumb {
+  background: #A08581;
+  border: 0px none #fff;
+  border-radius: 60px}
+::-webkit-scrollbar-thumb:hover {
+  background: #A08581}
+::-webkit-scrollbar-track {
+  background: #694944;
+  border: 0px none #fff;
+  border-radius: 0}
