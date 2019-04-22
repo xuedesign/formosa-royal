@@ -113,9 +113,15 @@ header{
 #concainer{
     display: block;
     width: 1240px;
-    min-height: 1000px;
     margin: 0 auto;
     padding: 55px 0}
+#profile,
+#products,
+#storeshot{
+    display: block;
+    width: 100%}
+#profile,
+#products{ margin-bottom: 30px}
 footer{
     height: 350px;
     background: url(../images/bg_footer.png) repeat-x}
@@ -179,7 +185,7 @@ nav li a:hover{
     z-index: 1000;
 	width:100%;
 	height:60px;
-	background:#7A6562}
+	background:#a08581}
 #menu{
     width:1240px; 
     margin:0 auto; 
@@ -191,8 +197,8 @@ nav li a:hover{
     height: 37px;
     background: url(../images/logo_topbar.png) no-repeat;
     text-indent:100%;
-white-space:nowrap;
-overflow:hidden;
+    white-space:nowrap;
+    overflow:hidden;
     margin-top: 11px}
 #menu span a{
     display: block;
@@ -201,8 +207,8 @@ overflow:hidden;
     height: 33px;
     background: url(../images/btn_totop.png) no-repeat;
     text-indent:100%;
-white-space:nowrap;
-overflow:hidden;
+    white-space:nowrap;
+    overflow:hidden;
     margin-top: 16px}
 #menu span a:hover{
     background-position: 0 -33px}
@@ -212,7 +218,7 @@ overflow:hidden;
     padding-left: 30px}
 #menu li{
     display: inline;
-    font-size: .938em;
+    font-size: 1.5rem;
     line-height: 65px;
     color: #fff}
 #menu a{
@@ -293,15 +299,46 @@ h1{
     letter-spacing: 1px}
 #concainer h3{padding-bottom: 30px}
 #concainer p{
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
     font-weight: 300;
     color: rgb(62, 57, 49);
-    padding: 0 20px 15px 20px}
+    padding: 0 50px 15px 20px}
+#box_brand-info{
+    display: block;
+    float:left;
+    width: 60%}
+#box_video{
+    display: block;
+    float: right;
+    width: 40%}
+#box_video iframe{
+    width: 440px;
+    height: 247px}
 
 /* 4-5.瑞士名錶 */
+.products-list,
+.storeshot-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 20px}
+.products-list li{
+    display: block;
+    margin: 0 2% 30px}
+.products-list img{
+    width: 100%;
+    height: auto;
+    /*border: 1px solid #e1e1e1;*/
+    transform:scale(1,1);transition: all .5s ease-out}
+.products-list img:hover{transform:scale(1.1,1.1)}
 
 /* 4-6.店面環境 */
+#storeshot h3{ display: none}
+.storeshot-list li{
+    display: block;
+    margin: 0 2%}
 
 /* 4-7.版權列 */
 #foot-main{

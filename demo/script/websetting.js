@@ -6,18 +6,22 @@ loadjs(['css/flexslider.css','script/lib/jquery.flexslider.js'], function() {
   });
 });
 
-//頂端浮動選單
-$(function(){$(window).load(function(){$(window).bind("scroll resize",function(){var o=$(this),t=o.scrollTop();800>t&&$("#top-bar").stop().animate({top:"-65px"}),t>800&&$("#top-bar").stop().animate({top:"0px"})}).scroll()})});
-
 //圖片延遲載入
 loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
     const observer = lozad();
     observer.observe();
 });
 
+//頂端浮動選單
+$(function(){$(window).load(function(){$(window).bind("scroll resize",function(){var o=$(this),t=o.scrollTop();180>t&&$("#top-bar").stop().animate({top:"-65px"}),t>180&&$("#top-bar").stop().animate({top:"0px"})}).scroll()})});
+
 //wow載入動畫
 loadjs('script/lib/wow.min.js', function() {
   new WOW().init();
+});
+
+//Lightbox
+loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css','https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'], function() {
 });
 
 // 另開視窗
