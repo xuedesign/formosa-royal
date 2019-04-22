@@ -113,6 +113,8 @@ nav{ width: 80%}
 #box_video iframe{
     width: 610px;
     height: 342px}
+.products-list,
+.storeshot-list{ padding: 0}
 #map iframe{ width: 440px}
 }
 
