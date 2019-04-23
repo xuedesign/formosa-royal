@@ -409,8 +409,8 @@ h1{
 .slideInLeft {
     -webkit-animation-name: slideInLeft;
             animation-name: slideInLeft;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
+    /*-webkit-animation-delay: .5s;
+            animation-delay: .5s;*/
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
             animation-duration: 1s}
@@ -444,8 +444,8 @@ h1{
 .slideInRight {
     -webkit-animation-name: slideInRight;
             animation-name: slideInRight;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
+    /*-webkit-animation-delay: .5s;
+            animation-delay: .5s;*/
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
             animation-duration: 1s}
@@ -479,8 +479,8 @@ h1{
 .slideInUp {
     -webkit-animation-name: slideInUp;
             animation-name: slideInUp;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
+    /*-webkit-animation-delay: .5s;
+            animation-delay: .5s;*/
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
             animation-duration: 1s}
