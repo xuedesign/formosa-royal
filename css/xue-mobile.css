@@ -224,9 +224,9 @@ nav li a:visited{ padding: 0 0 5px}
     background-size: cover}
 
 #concainer h3{padding-bottom: 15px}
-/*#box_video video{
-    width: 330px;
-    height: 185px}*/
+#box_video img{
+    width: 95%;
+    height: auto}
 .products-list li{
     width: 47%;
     margin: 0 1% 30px}
