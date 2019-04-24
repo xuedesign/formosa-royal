@@ -1,0 +1,509 @@
+@charset "utf-8";
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
+*
+*
+* @project    Formosa Royal co., ltd
+* @Author     Elmo Woo <hello@xuedesign.tw>
+* @copyright  2019 xuedesign studio
+* @version    v1.5 - 201904
+*
+*=====================================
+* 0.Reset重置
+* 1.通用設定
+* 2.結構設定
+*       2-1.區塊設定
+*       2-2.結構文字設定
+* 3.選單設定
+*       3-1.主選單
+*       3-2.頂端浮動選單
+*       3-3.行動版選單
+* 4.內容設定
+*       4-1.頂部列
+*       4-2.品牌選單
+*       4-3.品牌故事
+*       4-4.瑞士名錶
+*       4-5.店面環境
+*       4-6.版權列
+* 5.載入動畫
+* 6.自訂scrollbar
+*=====================================
+**/
+
+/*
+=====================================
+0. Reset重置
+=====================================
+*/
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC");
+
+
+/*
+=====================================
+1. 通用設定
+=====================================
+*/
+html { font-size:62.5% }
+body{
+	margin: 0;
+	padding:0;
+	background: #fff;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: 1rem; /* 1rem=10px */
+	line-height:24px;
+	color:rgb(42, 34, 28)}
+/*a:link {text-decoration:none; color:#b76727}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#F50}*/
+form{margin:0; padding:0}
+image{border:0}
+::selection { background: #b58e88; color: #fff}
+::-moz-selection { background: #b58e88; color: #fff}
+img::selection { background: transparent}
+img::-moz-selection { background: transparent}
+
+.clean{ clear:both}
+.hidden{ display:none}
+
+/*
+=====================================
+2. 結構設定
+=====================================
+*/
+#wrap,
+header,
+#banner_slider,
+#bar-brand,
+footer{
+    display: block;
+    width: 100%;
+    min-width: 1240px}
+header{
+    height: 157px;
+    padding-top: 26px;
+    background: url(../images/bg_header.png) repeat-x}
+#bar-brand{
+    position: relative;
+    height: 122px;
+    background: rgb(208, 208, 208)}
+#concainer{
+    display: block;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 55px 0}
+#profile,
+#products,
+#storeshot{
+    display: block;
+    width: 100%}
+#profile,
+#products{ margin-bottom: 30px}
+footer{
+    height: 350px;
+    background: url(../images/bg_footer.png) repeat-x}
+
+/*
+=====================================
+3. 選單設定
+=====================================
+*/
+/* 3-1 主選單*/
+nav{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 26px;
+    text-align: center}
+nav li{
+    display: inline;
+    font-size: 1.8rem;
+    letter-spacing: 1px}
+nav li a,
+nav li a:visited{
+    color: rgb(96, 81, 70);
+    text-decoration: none;
+    padding: 0 30px 5px}
+nav li a:hover{
+    color: rgb(139, 67, 54)}
+.hvr-ufc {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden}
+.hvr-ufc:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: rgb(150, 125, 121);
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out}
+.hvr-ufc:hover:before, 
+.hvr-ufc:focus:before, 
+.hvr-ufc:active:before {
+    left: 0;
+    right: 0}
+
+/* 3-2 浮動頂端選單 */
+#top-bar{
+    position:fixed;
+	top:-65px;
+    z-index: 1000;
+	width:100%;
+	height:60px;
+	background:#a08581}
+#menu{
+    width:1240px; 
+    margin:0 auto; 
+    line-height:50px}
+#menu h3{
+    display: block;
+    float: left;
+    width: 270px;
+    height: 37px;
+    background: url(../images/logo_topbar.png) no-repeat;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    margin-top: 11px}
+#menu span a{
+    display: block;
+    float: right;
+    width: 33px;
+    height: 33px;
+    background: url(../images/btn_totop.png) no-repeat;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    margin-top: 16px}
+#menu span a:hover{
+    background-position: 0 -33px}
+#menu ul{
+    display: block;
+    float: left;
+    padding-left: 30px}
+#menu li{
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 65px;
+    color: #fff}
+#menu a{
+    color:#fff; 
+    text-decoration: none;
+    padding:0 20px}
+#menu a:visited{
+    color:#fff; 
+    text-decoration: none}
+#menu a:hover{
+    color:#f50; 
+    text-decoration: none}
+
+/*
+=====================================
+4. 內容設定
+=====================================
+*/
+/* 4-1.頂端列 */
+h1{
+    display: block;
+    margin: 0 auto;
+    width: 431px;
+    height: 60px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+
+/* 4-2.品牌選單 */
+.brand-item{
+    display: block;
+    padding-top: 20px;
+    text-align: center}
+.brand-item li{ display: inline-block}
+.brand-item li a{
+    display: block;
+    height: 75px;
+    margin: 0 40px;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden}
+.brand-item .brand-icon-01 a{
+    width: 143px;
+    background: url(../images/brand_Bell-Ross.png) no-repeat}
+.brand-item .brand-icon-01 a:hover{
+    background: url(../images/brand_Bell-Ross-hover.png) no-repeat}
+.brand-item .brand-icon-02 a{
+    width: 223px;
+    background: url(../images/brand_Girard-Perregaux.png) no-repeat}
+.brand-item .brand-icon-02 a:hover{
+    background: url(../images/brand_Girard-Perregaux-hover.png) no-repeat}
+.brand-item .brand-icon-03 a{
+    width: 153px;
+    background: url(../images/brand_patek-philippe.png) no-repeat  }
+.brand-item .brand-icon-03 a:hover{
+    background: url(../images/brand_patek-philippe-hover.png) no-repeat  }
+.brand-item .brand-icon-04 a{
+    width: 163px;
+    background: url(../images/brand_CHOPARD.png) no-repeat}
+.brand-item .brand-icon-04 a:hover{
+    background: url(../images/brand_CHOPARD-hover.png) no-repeat}
+.brand-item .brand-icon-05 a{
+    width: 153px;
+    background: url(../images/brand_longines.png) no-repeat}
+.brand-item .brand-icon-05 a:hover{
+    background: url(../images/brand_longines-hover.png) no-repeat}
+
+/* 4-4.品牌故事 */
+#concainer h3, 
+#contact h3{
+    font-size: 2.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: rgb(150, 125, 121);
+    letter-spacing: 1px}
+#concainer h3{padding-bottom: 30px}
+#concainer p{
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    text-align: justify;
+    color: rgb(62, 57, 49);
+    padding: 0 50px 15px 20px}
+#box_brand-info{
+    display: block;
+    float:left;
+    width: 60%}
+#box_video{
+    display: block;
+    float: right;
+    width: 40%}
+#box_video iframe{
+    width: 440px;
+    height: 247px}
+
+/* 4-5.瑞士名錶 */
+.products-list,
+.storeshot-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 20px}
+.products-list li{
+    display: block;
+    margin: 0 2% 30px}
+.products-list img{
+    width: 100%;
+    height: auto;
+    /*border: 1px solid #e1e1e1;*/
+    transform:scale(1,1);transition: all .5s ease-out}
+.products-list img:hover{transform:scale(1.1,1.1)}
+
+/* 4-6.店面環境 */
+#storeshot h3{ display: none}
+.storeshot-list li{
+    display: block;
+    margin: 0 2%}
+
+/* 4-7.版權列 */
+#foot-main{
+    display: block;
+    width: 1124px;
+    margin: 0 auto;
+    padding: 0 30px}
+#copyright{
+    font-size: 1.3rem;
+    line-height: 32px;
+    color: rgb(110, 88, 84);
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 42px}
+#contact{
+    display: block;
+    float: left;
+    padding-right: 25px}
+#contact h3{ padding-bottom: 20px}
+#contact li{
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: rgb(62, 57, 49)}
+#map{
+    display: block;
+    float: left}
+#map iframe{
+    width: 550px;
+    height: 212px;
+    overflow: hidden}
+#shoptag{
+    display: block;
+    float: right;
+    width: 162px;
+    height: 212px;
+    background: url(../images/pic_shoptag.png) no-repeat}
+
+/*
+=====================================
+5. 載入動畫
+=====================================
+*/
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+            animation-name: slideInLeft;
+    /*-webkit-animation-delay: .5s;
+            animation-delay: .5s;*/
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+            animation-duration: 1s}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+            animation-name: slideInRight;
+    /*-webkit-animation-delay: .5s;
+            animation-delay: .5s;*/
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+            animation-duration: 1s}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+            animation-name: slideInUp;
+    /*-webkit-animation-delay: .5s;
+            animation-delay: .5s;*/
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+            animation-duration: 1s}
+
+
+/*
+=====================================
+6. 自訂scrollbar
+=====================================
+*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0}
+::-webkit-scrollbar-thumb {
+  background: #A08581;
+  border: 0px none #fff;
+  border-radius: 60px}
+::-webkit-scrollbar-thumb:hover {
+  background: #A08581}
+::-webkit-scrollbar-track {
+  background: #694944;
+  border: 0px none #fff;
+  border-radius: 0}
