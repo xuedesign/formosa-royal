@@ -47,7 +47,7 @@ footer{ min-width: 1000px}
 #foot-main{ width: 90%}
     
 .brand-item li a{ margin: 0 15px}
-#box_video iframe{
+#box_video img{
     width: 400px;
     height: 225px}
 .products-list img{ width: 95%}
@@ -110,9 +110,9 @@ nav{ width: 80%}
     width: 90%;
     margin: 0 auto}
 #box_brand-info{ padding-bottom: 20px}
-#box_video iframe{
-    width: 610px;
-    height: 342px}
+#box_video img{
+    width: 100%;
+    height: auto}
 .products-list,
 .storeshot-list{ padding: 0}
 #map iframe{ width: 440px}
@@ -157,9 +157,9 @@ footer{ min-width: 573px}
     width: 82px;
     background-size: cover}
 
-#box_video iframe{
+/*#box_video video{
     width: 480px;
-    height: 269px}
+    height: 269px}*/
 .products-list li{
     width: 31%;
     margin: 0 1% 30px}
@@ -224,9 +224,9 @@ nav li a:visited{ padding: 0 0 5px}
     background-size: cover}
 
 #concainer h3{padding-bottom: 15px}
-#box_video iframe{
+/*#box_video video{
     width: 330px;
-    height: 185px}
+    height: 185px}*/
 .products-list li{
     width: 47%;
     margin: 0 1% 30px}
@@ -263,9 +263,9 @@ footer{ height: 800px}
 h1{ width: 280px;
     height: 39px;
     background-size: contain}
-#box_video iframe{
+/*#box_video video{
     width: 260px;
-    height: 146px}
+    height: 146px}*/
 .products-list li{
     width: 99%;
     margin: 0 0 30px}
