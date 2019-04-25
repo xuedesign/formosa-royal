@@ -52,11 +52,11 @@ html[xmlns] .slides {display: block;}
     background-position: top center;
     background-size: contain}
 .flexslider .slides li.ban-01{
-    background: url(../images/banner-01.webp) no-repeat}
+    background: url(../images/banner-01.jpg) no-repeat}
 .flexslider .slides li.ban-02{
-    background: url(../images/banner-02.webp) no-repeat}
+    background: url(../images/banner-02.jpg) no-repeat}
 .flexslider .slides li.ban-03{
-    background: url(../images/banner-03.webp) no-repeat}
+    background: url(../images/banner-03.jpg) no-repeat}
 
 
 /* Direction Nav */
