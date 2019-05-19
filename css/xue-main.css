@@ -47,6 +47,8 @@
 *       4-4.瑞士名錶
 *       4-5.店面環境
 *       4-6.版權列
+*       4-6.版權列
+*       4-6.版權列
 * 5.載入動畫
 * 6.自訂scrollbar
 *=====================================
@@ -103,6 +105,7 @@ footer{
     width: 100%;
     min-width: 1240px}
 header{
+    position: relative;
     height: 157px;
     padding-top: 26px;
     background: url(../images/bg_header.png) repeat-x}
@@ -190,7 +193,7 @@ nav li a:hover{
     width:1240px; 
     margin:0 auto; 
     line-height:50px}
-#menu h3{
+#menu h3 a{
     display: block;
     float: left;
     width: 270px;
@@ -199,7 +202,8 @@ nav li a:hover{
     text-indent:100%;
     white-space:nowrap;
     overflow:hidden;
-    margin-top: 11px}
+    margin-top: 11px;
+    padding: 0}
 #menu span a{
     display: block;
     float: right;
@@ -229,7 +233,7 @@ nav li a:hover{
     color:#fff; 
     text-decoration: none}
 #menu a:hover{
-    color:#f50; 
+    color:#ffe0ad; 
     text-decoration: none}
 
 /*
@@ -238,12 +242,23 @@ nav li a:hover{
 =====================================
 */
 /* 4-1.頂端列 */
-h1{
+h1 a{
     display: block;
     margin: 0 auto;
-    width: 431px;
+    width: 522px;
     height: 60px;
     background: url(../images/logo.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+#to-pp a{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 15%;
+    background: url(../images/btn_pp.png) no-repeat;
+    width: 113px;
+    height: 56px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
@@ -287,7 +302,7 @@ h1{
 .brand-item .brand-icon-05 a:hover{
     background: url(../images/brand_longines-hover.png) no-repeat}
 
-/* 4-4.品牌故事 */
+/* 4-3.品牌故事 */
 #concainer h3, 
 #contact h3{
     font-size: 2.2rem;
@@ -315,7 +330,7 @@ h1{
     width: 440px;
     height: 247px}
 
-/* 4-5.瑞士名錶 */
+/* 4-4.瑞士名錶 */
 .products-list,
 .storeshot-list{
     display: flex;
@@ -333,13 +348,13 @@ h1{
     transform:scale(1,1);transition: all .5s ease-out}
 .products-list img:hover{transform:scale(1.1,1.1)}
 
-/* 4-6.店面環境 */
+/* 4-5.店面環境 */
 #storeshot h3{ display: none}
 .storeshot-list li{
     display: block;
     margin: 0 2%}
 
-/* 4-7.版權列 */
+/* 4-6.版權列 */
 #foot-main{
     display: block;
     width: 1124px;
@@ -374,6 +389,9 @@ h1{
     width: 162px;
     height: 212px;
     background: url(../images/pic_shoptag.png) no-repeat}
+
+/* 4-7.名品導覽 */
+#pp-info{ display: none}
 
 /*
 =====================================

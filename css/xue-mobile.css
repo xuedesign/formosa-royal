@@ -45,7 +45,8 @@ footer{ min-width: 1000px}
 #menu,
 #concainer,
 #foot-main{ width: 90%}
-    
+
+#to-pp a{ right: 6%}    
 .brand-item li a{ margin: 0 15px}
 #box_video img{
     width: 400px;
@@ -74,6 +75,15 @@ footer{ min-width: 750px}
 #bar-brand{ height: 100px}
 footer{ height: 505px}
 
+#to-pp{ display: none}
+#pp-info{ 
+    display: block;
+    margin-bottom: 30px}
+#pp-info img{
+    display: block;
+    width: 85%;
+    height: auto;
+    margin: 0 auto}    
 nav{ width: 80%}
 .brand-item li a{
     height: 50px;
@@ -191,7 +201,7 @@ footer{ min-width: 360px}
 footer{ height: 750px}
 
 header{ height: 140px}
-h1{ width: 300px;
+h1 a{ width: 300px;
     height: 42px;
     background-size: contain}
 nav{ width: 95%}
@@ -260,7 +270,7 @@ footer{ min-width: 300px}
 #bar-brand{ height: 330px}
 footer{ height: 800px}
     
-h1{ width: 280px;
+h1 a{ width: 280px;
     height: 39px;
     background-size: contain}
 /*#box_video video{
