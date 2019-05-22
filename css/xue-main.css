@@ -407,6 +407,82 @@ h1 a{
     width: 49%}
 #info-left{ float: left}
 #info-right{ float: right}
+.btn_back{
+    display: block;
+    opacity: .7;
+    width: 150px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: #8a7171;
+    text-decoration: none;
+    background: -webkit-gradient(linear, left top, right top, from(#fbf3e4), to(#e0d1d1));
+    background: -webkit-linear-gradient(top, #fbf3e4, #e0d1d1);
+    background: -moz-linear-gradient(top, #fbf3e4, #e0d1d1);
+    background: -o-linear-gradient(top, #fbf3e4, #e0d1d1);
+    background: -ms-linear-gradient(top, #fbf3e4, #e0d1d1);
+    background: linear-gradient(top, #fbf3e4, #e0d1d1);
+    background-color: #fbf3e4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px}
+.btn_back:hover{
+    text-decoration: none;
+    opacity: 1;
+    transition: .5s}
+
+#box_tabs{
+    display: block;
+    width: 960px;
+    height: 540px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+text-align: center;}
+#content1,
+#content2{
+    display: none;
+    padding: 20px 0 0}
+
+input{ display: none}
+label{
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #8a7171}
+label:hover {
+    color: #8a7171;
+    cursor: pointer}
+input:checked + label {
+    color: #b45f5f;
+    font-weight: 600;
+    border-bottom: 3px solid #8a7171}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block}
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  label {
+    padding: 15px;
+  }
+}
+
 
 /*
 =====================================
