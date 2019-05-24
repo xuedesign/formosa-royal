@@ -43,27 +43,28 @@ html[xmlns] .slides {display: block;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
-.flexslider .slides li{ display:none; width:100%; height:450px}
-.flexslider .slides li a{display:block;width:100%; height:450px}
+.flexslider .slides li{ display: block; width:100%; /*height:450px*/}
+.flexslider .slides li a{display:block;width:100%; /*height:450px*/}
+.flexslider .slides li img{ width: 100%; height: auto}
 .carousel li {margin-right: 5px}
 
 
 /* Direction Nav */
 .flex-direction-nav { display: block}
-.flex-direction-nav {*height: 0;}
-.flex-direction-nav a {
-    width: 100px; 
-    height: 206px; 
-    margin: 0; 
-    display: block; 
-    background: url(../images/btn_slide.png) no-repeat 0 0; 
+.flex-direction-nav {*height: 0}
+.flex-direction-nav a{
+    display: block;
     position: absolute; 
     top: 30%; 
     z-index: 10; 
+    width: 100px; 
+    height: 206px; 
+    margin: 0; 
+    background: url(../images/btn_slide.png) no-repeat 0 0; 
     cursor: pointer; 
     text-indent: -9999px; 
     opacity: 0.8; 
-    -webkit-transition: all .3s ease;}
+    -webkit-transition: all .3s ease}
 .flex-direction-nav .flex-next {background-position: 100% 0; right:0; }
 .flex-direction-nav .flex-prev {left:0;}
 .flexslider:hover .flex-next {opacity: 1; right:0;}
@@ -81,37 +82,29 @@ html[xmlns] .slides {display: block;}
 /*.flex-control-paging li a.flex-active { background: #fce4c6; cursor: default; /*-webkit-box-shadow: inset 2px 2px 1px #990030;-moz-box-shadow: inset 2px 2px 1px #334E21; box-shadow: inset 2px 2px 1px #334E21*/}
 
 
-@media (max-width:1500px) { 
-.flexslider .slides li.ban-01,
-.flexslider .slides li.ban-02,
-.flexslider .slides li.ban-03{
-    background-size: 150%;
-    background-position: top center}
+@media (min-width:1000px){
+.flex-direction-nav a{ top:30%}   
 }
 
-@media (max-width:1100px) { /*1000*/
-.flexslider .slides li.ban-01,
-.flexslider .slides li.ban-02,
-.flexslider .slides li.ban-03{
-    background-size: 200%;
-    background-position: top center}
-}
-
-@media (max-width:800px) { /*750*/
-.flexslider .slides li{ 
-    height:400px}
+@media (max-width:800px){ /*750*/
+.flex-direction-nav a{ top:20%}
 }
 
 @media (max-width: 600px) { /*573*/
-.flexslider .slides li{ height:316px}
+.flex-direction-nav a{ top:15%}
 }
 
 @media (max-width: 420px) { /*360*/
-.flexslider .slides li{ height:194px}
+.flex-direction-nav a{ 
+    width:60px;
+    height: 150px;
+    background-size: 200%;
+    top:15%}
 }
 
 @media (max-width: 321px) { /*300*/
-.flexslider .slides li{ height:163px}
+.flex-direction-nav a{ 
+    top:10%}
 }
 /*@media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
