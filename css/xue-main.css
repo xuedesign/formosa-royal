@@ -442,6 +442,7 @@ h1 a{
     width: 800px;
     padding: 30px 0;
     margin: 0 auto}
+#content2{ height: 510px; overflow: hidden}
 
 input{ display: none}
 label{

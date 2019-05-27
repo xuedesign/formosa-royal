@@ -146,6 +146,7 @@ input:checked + label{
     width: 100%;
     padding: 30px 0;
     margin: 0 auto}
+#content2{ height: 420px; overflow: hidden}
 }
 
 /*
@@ -199,6 +200,7 @@ footer{ min-width: 573px}
     width: 110px;
     height: 144px;
     background-size: contain}
+#content2{ height: 330px; overflow: hidden}
 }
 
 /*
@@ -274,6 +276,7 @@ nav li a:visited{ padding: 0 0 5px}
     height: 212px;
     margin: 0 auto;
     background-size: contain}
+#content2{ height: 256px; overflow: hidden}
 }
 
 /*
@@ -303,4 +306,5 @@ h1 a{ width: 280px;
 label,
 input:checked + label{
     width: 45%}
+#content2{ height: 210px; overflow: hidden}
 }
