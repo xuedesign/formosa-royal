@@ -111,7 +111,8 @@ header{
 #bar-brand{
     position: relative;
     height: 122px;
-    background: rgb(208, 208, 208)}
+    background: #e6e6e6;
+    /*background: rgb(208, 208, 208)*/}
 #concainer{
     display: block;
     width: 1240px;
@@ -253,11 +254,12 @@ h1 a{
 #to-pp a{
     display: block;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 15%;
-    background: url(../images/btn_pp.png) no-repeat;
-    width: 113px;
-    height: 56px;
+    background: url(../images/btn_PP-01.png) no-repeat;
+    background-size: 128px 75px;
+    width: 128px;
+    height: 75px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
@@ -270,36 +272,37 @@ h1 a{
 .brand-item li{ display: inline-block}
 .brand-item li a{
     display: block;
-    height: 75px;
+    /*height: 75px;*/
+    height: 81px;
     margin: 0 40px;
     text-indent:100%;
     white-space:nowrap;
     overflow:hidden}
 .brand-item .brand-icon-01 a{
     width: 143px;
-    background: url(../images/brand_Bell-Ross.png) no-repeat}
+    background: url(../images/brand_Bell-Ross-hover.png) 0 6px no-repeat}
 .brand-item .brand-icon-01 a:hover{
-    background: url(../images/brand_Bell-Ross-hover.png) no-repeat}
+    background: url(../images/brand_Bell-Ross.png) 0 6px no-repeat}
 .brand-item .brand-icon-02 a{
     width: 223px;
-    background: url(../images/brand_Girard-Perregaux.png) no-repeat}
+    background: url(../images/brand_Girard-Perregaux-hover.png) 0 6px no-repeat}
 .brand-item .brand-icon-02 a:hover{
-    background: url(../images/brand_Girard-Perregaux-hover.png) no-repeat}
+    background: url(../images/brand_Girard-Perregaux.png) 0 6px no-repeat}
 .brand-item .brand-icon-03 a{
     width: 153px;
-    background: url(../images/brand_patek-philippe.png) no-repeat  }
+    background: url(../images/brand_patek-philippe-hover01.png) no-repeat  }
 .brand-item .brand-icon-03 a:hover{
-    background: url(../images/brand_patek-philippe-hover.png) no-repeat  }
+    background: url(../images/brand_patek-philippe.png) no-repeat}
 .brand-item .brand-icon-04 a{
     width: 163px;
-    background: url(../images/brand_CHOPARD.png) no-repeat}
+    background: url(../images/brand_CHOPARD-hover.png) 0 6px no-repeat}
 .brand-item .brand-icon-04 a:hover{
-    background: url(../images/brand_CHOPARD-hover.png) no-repeat}
+    background: url(../images/brand_CHOPARD.png) 0 6px no-repeat}
 .brand-item .brand-icon-05 a{
     width: 153px;
-    background: url(../images/brand_longines.png) no-repeat}
+    background: url(../images/brand_longines-hover.png) 0 5px no-repeat}
 .brand-item .brand-icon-05 a:hover{
-    background: url(../images/brand_longines-hover.png) no-repeat}
+    background: url(../images/brand_longines.png) 0 5px no-repeat}
 
 /* 4-3.品牌故事 */
 #concainer h3, 
@@ -391,15 +394,15 @@ h1 a{
 
 /* 4-7.名品導覽 */
 #pp-info{ display: none}
-#logo-pp{
+#logo-pp a{
     display: block;
     width: 217px;
-    height: 108px;
-    background: url(../images/logo-pp.png) no-repeat;
+    height: 142px;
+    background: url(../images/logo-pp-01.png) no-repeat;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    margin: 0 auto 15px auto}
+    margin: 0 auto 20px auto}
 #info-left,
 #info-right{
     display: block;

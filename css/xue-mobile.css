@@ -98,7 +98,7 @@ nav{ width: 80%}
     background-size: cover}
 .brand-item .brand-icon-03 a,
 .brand-item .brand-icon-03 a:hover{
-    width: 102px;
+    width: 94px;
     background-size: cover}
 .brand-item .brand-icon-04 a,
 .brand-item .brand-icon-04 a:hover{
@@ -290,7 +290,7 @@ header,
 #banner_slider,
 #bar-brand,
 footer{ min-width: 300px}
-#bar-brand{ height: 330px}
+#bar-brand{ height: 270px}
 footer{ height: 800px}
     
 h1 a{ width: 280px;
