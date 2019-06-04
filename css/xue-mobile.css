@@ -170,23 +170,29 @@ footer{ min-width: 573px}
 .brand-item .brand-icon-01 a,
 .brand-item .brand-icon-01 a:hover{
     width: 76px;
-    background-size: cover}
+    background-size: cover;
+    background-position: 0 0}
 .brand-item .brand-icon-02 a,
 .brand-item .brand-icon-02 a:hover{
     width: 118px;
-    background-size: cover}
+    background-size: cover;
+    background-position: 0 0}
 .brand-item .brand-icon-03 a,
 .brand-item .brand-icon-03 a:hover{
-    width: 82px;
-    background-size: cover}
+    width: 86px;
+    height: 45px;
+    background-size: cover;
+    background-position: 0 0}
 .brand-item .brand-icon-04 a,
 .brand-item .brand-icon-04 a:hover{
     width: 86px;
-    background-size: cover}
+    background-size: cover;
+    background-position: 0 0}
 .brand-item .brand-icon-05 a,
 .brand-item .brand-icon-05 a:hover{
     width: 82px;
-    background-size: cover}
+    background-size: cover;
+    background-position: 0 0}
 
 /*#box_video video{
     width: 480px;
@@ -245,6 +251,7 @@ nav li a:visited{ padding: 0 0 5px}
 .brand-item .brand-icon-03 a,
 .brand-item .brand-icon-03 a:hover{
     width: 102px;
+    height: 54px;
     background-size: cover}
 .brand-item .brand-icon-04 a,
 .brand-item .brand-icon-04 a:hover{
