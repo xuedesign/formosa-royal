@@ -274,7 +274,7 @@ h1 a{
     display: block;
     /*height: 75px;*/
     height: 81px;
-    margin: 0 40px;
+    margin: 0 30px;
     text-indent:100%;
     white-space:nowrap;
     overflow:hidden}
@@ -303,6 +303,11 @@ h1 a{
     background: url(../images/brand_longines-hover.png) 0 5px no-repeat}
 .brand-item .brand-icon-05 a:hover{
     background: url(../images/brand_longines.png) 0 5px no-repeat}
+.brand-item .brand-icon-06 a{
+    width: 171px;
+    background: url(../images/brand_Breitling-hover.png) 0 5px no-repeat}
+.brand-item .brand-icon-06 a:hover{
+    background: url(../images/brand_Breitling.png) 0 5px no-repeat}    
 
 /* 4-3.品牌故事 */
 #concainer h3, 
@@ -378,6 +383,13 @@ h1 a{
     font-size: 1.5rem;
     line-height: 28px;
     color: rgb(62, 57, 49)}
+#contact a>i{
+    font-size: 30px;
+    margin: 10px 10px 0 0;
+    color: #694944}
+#contact a:hover>i{
+    color: #b45f5f}
+
 #map{
     display: block;
     float: left}
