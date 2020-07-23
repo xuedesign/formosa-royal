@@ -27,15 +27,50 @@
 *
 * @project    Formosa Royal co., ltd
 * @Author     Elmo Woo <hello@xuedesign.tw>
-* @copyright  2019 xuedesign studio
-* @version    v1.6 - 201905
+* @copyright  2020 xuedesign studio
+* @version    v1.7 - 202007
 *
+
+
 
 /*
 =====================================
 平板裝置(寬>長)  for-tablet-landscape-up
 =====================================
 */
+@media (max-width:1390px) { 
+    .brand-item{
+        padding-top: 25px}
+    .brand-item li a{
+        height: 65px;
+        margin: 0 30px}
+    .brand-item .brand-icon-01 a,
+    .brand-item .brand-icon-01 a:hover{
+        width: 124px;
+        background-size: contain;}
+    .brand-item .brand-icon-02 a,
+    .brand-item .brand-icon-02 a:hover{
+        width: 193px;
+        background-size: contain}
+    .brand-item .brand-icon-03 a,
+    .brand-item .brand-icon-03 a:hover{
+        width: 133px;
+        background-size: contain}
+    .brand-item .brand-icon-04 a,
+    .brand-item .brand-icon-04 a:hover{
+        width: 141px;
+        background-size: contain}
+    .brand-item .brand-icon-05 a,
+    .brand-item .brand-icon-05 a:hover{
+        width: 133px;
+        background-size: contain}
+    .brand-item .brand-icon-06 a,
+    .brand-item .brand-icon-06 a:hover{
+        width: 148px;
+        background-size: contain}     
+}
+
+
 @media (max-width:1110px) { /*1000*/
 #wrap,
 header,
@@ -45,9 +80,41 @@ footer{ min-width: 1000px}
 #menu,
 #concainer,
 #foot-main{ width: 90%}
+nav{ width: 80%}
 
-#to-pp a{ right: 6%}    
-.brand-item li a{ margin: 0 15px}
+#to-pp a{ right: 6%}
+.brand-item{
+    padding-top: 30px}    
+.brand-item li a{ margin: 0 30px}
+.brand-item li a{
+    height: 55px;
+    margin: 0 10px}
+.brand-item .brand-icon-01 a,
+.brand-item .brand-icon-01 a:hover{
+    width: 105px;
+    background-size: contain}
+.brand-item .brand-icon-02 a,
+.brand-item .brand-icon-02 a:hover{
+    width: 164px;
+    background-size: contain}
+.brand-item .brand-icon-03 a,
+.brand-item .brand-icon-03 a:hover{
+    width: 112px;
+    background-size: contain}
+.brand-item .brand-icon-04 a,
+.brand-item .brand-icon-04 a:hover{
+    width: 120px;
+    background-size: contain}
+.brand-item .brand-icon-05 a,
+.brand-item .brand-icon-05 a:hover{
+    width: 112px;
+    background-size: contain}
+.brand-item .brand-icon-06 a,
+.brand-item .brand-icon-06 a:hover{
+    width: 125px;
+    height: 59px;
+    background-size: contain}
+
 #box_video img{
     width: 400px;
     height: 225px}
@@ -72,9 +139,10 @@ header,
 footer{ min-width: 750px}
 #concainer,
 #foot-main{ width: 90%}
-#bar-brand{ height: 100px}
+#bar-brand{ height: 230px}
 footer{ height: 505px}
 
+#menu a{ padding:0 10px}
 #to-pp{ display: none}
 #pp-info{ 
     display: block;
@@ -84,30 +152,37 @@ footer{ height: 505px}
     width: 85%;
     height: auto;
     margin: 0 auto}    
-nav{ width: 80%}
+nav{ width: 90%}
+nav li a,
+nav li a:visited{ padding: 0 0 10px}
+
 .brand-item li a{
-    height: 50px;
-    margin: 0 10px}
+    height: 81px;
+    margin: 0 30px}
 .brand-item .brand-icon-01 a,
 .brand-item .brand-icon-01 a:hover{
-    width: 95px;
-    background-size: cover}
+    width: 143px;
+    background-size: contain}
 .brand-item .brand-icon-02 a,
 .brand-item .brand-icon-02 a:hover{
-    width: 148px;
-    background-size: cover}
+    width: 223px;
+    background-size: contain}
 .brand-item .brand-icon-03 a,
 .brand-item .brand-icon-03 a:hover{
-    width: 94px;
-    background-size: cover}
+    width: 153px;
+    background-size: contain}
 .brand-item .brand-icon-04 a,
 .brand-item .brand-icon-04 a:hover{
-    width: 108px;
-    background-size: cover}
+    width: 163px;
+    background-size: contain}
 .brand-item .brand-icon-05 a,
 .brand-item .brand-icon-05 a:hover{
-    width: 102px;
-    background-size: cover}
+    width: 153px;
+    background-size: contain}
+.brand-item .brand-icon-06 a,
+.brand-item .brand-icon-06 a:hover{
+    width: 171px;
+    background-size: contain}    
 .brand-item li a{ margin: 0 15px}
 
 #contact{
@@ -160,11 +235,38 @@ header,
 #banner_slider,
 #bar-brand,
 footer{ min-width: 573px}
-#bar-brand{ height: 90px}
+#bar-brand{ height: 170px}
     
 #top-bar{ display: none}
-    
+
 .brand-item li a{
+    height: 55px;
+    margin: 0 10px}
+.brand-item .brand-icon-01 a,
+.brand-item .brand-icon-01 a:hover{
+    width: 105px;
+    background-size: contain}
+.brand-item .brand-icon-02 a,
+.brand-item .brand-icon-02 a:hover{
+    width: 164px;
+    background-size: contain}
+.brand-item .brand-icon-03 a,
+.brand-item .brand-icon-03 a:hover{
+    width: 112px;
+    background-size: contain}
+.brand-item .brand-icon-04 a,
+.brand-item .brand-icon-04 a:hover{
+    width: 120px;
+    background-size: contain}
+.brand-item .brand-icon-05 a,
+.brand-item .brand-icon-05 a:hover{
+    width: 112px;
+    background-size: contain}
+.brand-item .brand-icon-06 a,
+.brand-item .brand-icon-06 a:hover{
+    width: 125px;
+    background-size: contain}
+/*.brand-item li a{
     height: 40px;
     margin: 0 10px}
 .brand-item .brand-icon-01 a,
@@ -192,7 +294,7 @@ footer{ min-width: 573px}
 .brand-item .brand-icon-05 a:hover{
     width: 82px;
     background-size: cover;
-    background-position: 0 0}
+    background-position: 0 0}*/
 
 /*#box_video video{
     width: 480px;
@@ -220,7 +322,7 @@ header,
 #banner_slider,
 #bar-brand,
 footer{ min-width: 360px}
-#bar-brand{ height: 250px}
+#bar-brand{ height: 260px}
 #concainer,
 #foot-main{ 
     width: 95%;
@@ -233,6 +335,7 @@ h1 a{ width: 300px;
     height: 42px;
     background-size: contain}
 nav{ width: 95%}
+nav li{ font-size: 1.5rem}
 nav li a,
 nav li a:visited{ padding: 0 0 5px}
     
@@ -243,24 +346,28 @@ nav li a:visited{ padding: 0 0 5px}
 .brand-item .brand-icon-01 a,
 .brand-item .brand-icon-01 a:hover{
     width: 95px;
-    background-size: cover}
+    background-size: contain}
 .brand-item .brand-icon-02 a,
 .brand-item .brand-icon-02 a:hover{
     width: 148px;
-    background-size: cover}
+    background-size: ccontain}
 .brand-item .brand-icon-03 a,
 .brand-item .brand-icon-03 a:hover{
     width: 102px;
     height: 54px;
-    background-size: cover}
+    background-size: contain}
 .brand-item .brand-icon-04 a,
 .brand-item .brand-icon-04 a:hover{
     width: 108px;
-    background-size: cover}
+    background-size: contain}
 .brand-item .brand-icon-05 a,
 .brand-item .brand-icon-05 a:hover{
     width: 102px;
-    background-size: cover}
+    background-size: contain}
+    .brand-item .brand-icon-06 a,
+    .brand-item .brand-icon-06 a:hover{
+        width: 125px;
+        background-size: contain}    
 
 #concainer h3{padding-bottom: 15px}
 #box_video img{
@@ -297,12 +404,14 @@ header,
 #banner_slider,
 #bar-brand,
 footer{ min-width: 300px}
-#bar-brand{ height: 270px}
+#bar-brand{ height: 350px}
 footer{ height: 800px}
     
 h1 a{ width: 280px;
     height: 39px;
     background-size: contain}
+nav li{ font-size: 1.3rem}
+
 /*#box_video video{
     width: 260px;
     height: 146px}*/
