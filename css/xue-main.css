@@ -254,12 +254,12 @@ h1 a{
 #to-pp a{
     display: block;
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 15%;
     background: url(../images/btn_pp-01.png) no-repeat;
-    background-size: 128px 75px;
-    width: 128px;
-    height: 75px;
+    background-size: 145px 85px;
+    width: 145px;
+    height: 85px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
@@ -273,28 +273,28 @@ h1 a{
 .brand-item li a{
     display: block;
     /*height: 75px;*/
-    height: 81px;
+    height: 85px;/*81px*/
     margin: 0 30px;
     text-indent:100%;
     white-space:nowrap;
     overflow:hidden}
 .brand-item .brand-icon-01 a{
-    width: 143px;
+    width: 150px;
     background: url(../images/brand_Bell-Ross-hover.png) 0 6px no-repeat}
 .brand-item .brand-icon-01 a:hover{
     background: url(../images/brand_Bell-Ross.png) 0 6px no-repeat}
 .brand-item .brand-icon-02 a{
-    width: 223px;
+    width: 234px;
     background: url(../images/brand_Girard-Perregaux-hover.png) 0 6px no-repeat}
 .brand-item .brand-icon-02 a:hover{
     background: url(../images/brand_Girard-Perregaux.png) 0 6px no-repeat}
 .brand-item .brand-icon-03 a{
-    width: 153px;
-    background: url(../images/brand_patek-philippe-hover01.png) no-repeat  }
+    width: 145px;
+    background: url(../images/brand_patek-philippe.png) no-repeat;}
 .brand-item .brand-icon-03 a:hover{
-    background: url(../images/brand_patek-philippe.png) no-repeat}
+    background: url(../images/brand_patek-philippe-hover.png) no-repeat}
 .brand-item .brand-icon-04 a{
-    width: 163px;
+    width: 171px;
     background: url(../images/brand_CHOPARD-hover.png) 0 6px no-repeat}
 .brand-item .brand-icon-04 a:hover{
     background: url(../images/brand_CHOPARD.png) 0 6px no-repeat}
@@ -304,7 +304,7 @@ h1 a{
 .brand-item .brand-icon-05 a:hover{
     background: url(../images/brand_longines.png) 0 5px no-repeat}
 .brand-item .brand-icon-06 a{
-    width: 171px;
+    width: 179px;
     background: url(../images/brand_Breitling-hover.png) 0 5px no-repeat}
 .brand-item .brand-icon-06 a:hover{
     background: url(../images/brand_Breitling.png) 0 5px no-repeat}    
@@ -408,8 +408,8 @@ h1 a{
 #pp-info{ display: none}
 #logo-pp a{
     display: block;
-    width: 217px;
-    height: 142px;
+    width: 290px;
+    height: 170px;
     background: url(../images/logo-pp-01.png) no-repeat;
     text-indent: 100%;
     white-space: nowrap;
@@ -448,16 +448,32 @@ h1 a{
 
 #box_tabs{
     display: block;
-    width: 960px;
+    width: 80%/*960px*/;
     margin: 0 auto 30px auto;
-    text-align: center}
-#content1,
+    text-align: center;
+    position: relative;
+    padding-bottom: 68%/*65.25%*/;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;}
+/*#content1,
 #content2{
     display: none;
     width: 800px;
     padding: 30px 0;
     margin: 0 auto}
-#content2{ height: 510px; overflow: hidden}
+#content2{ height: 510px; overflow: hidden}*/
+#box_tabs iframe{
+    /*display: block;
+    width: 98%;
+    height: auto;
+    margin: 0 auto;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 input{ display: none}
 label{

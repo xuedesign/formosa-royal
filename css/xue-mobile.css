@@ -216,12 +216,14 @@ nav li a:visited{ padding: 0 0 10px}
 label,
 input:checked + label{
     width: 35%}
-#content1,
+#box_tabs{
+    padding-bottom: 80%;}
+/*#content1,
 #content2{
     width: 100%;
     padding: 30px 0;
     margin: 0 auto}
-#content2{ height: 420px; overflow: hidden}
+#content2{ height: 420px; overflow: hidden}*/
 }
 
 /*
@@ -309,6 +311,8 @@ footer{ min-width: 573px}
     height: 144px;
     background-size: contain}
 #content2{ height: 330px; overflow: hidden}
+#box_tabs{
+    padding-bottom: 85%;}
 }
 
 /*
@@ -322,7 +326,7 @@ header,
 #banner_slider,
 #bar-brand,
 footer{ min-width: 360px}
-#bar-brand{ height: 260px}
+#bar-brand{ height: 380px}
 #concainer,
 #foot-main{ 
     width: 95%;
@@ -351,10 +355,14 @@ nav li a:visited{ padding: 0 0 5px}
 .brand-item .brand-icon-02 a:hover{
     width: 148px;
     background-size: ccontain}
+.brand-item .brand-icon-03{
+    display: block;
+    width: 100%}
 .brand-item .brand-icon-03 a,
 .brand-item .brand-icon-03 a:hover{
-    width: 102px;
-    height: 54px;
+    width: 145px;/*102px*/
+    height: 85px;/*54px*/
+    margin: 0 auto 20px auto;
     background-size: contain}
 .brand-item .brand-icon-04 a,
 .brand-item .brand-icon-04 a:hover{
@@ -391,6 +399,12 @@ nav li a:visited{ padding: 0 0 5px}
     margin: 0 auto;
     background-size: contain}
 #content2{ height: 256px; overflow: hidden}
+#box_tabs{
+    padding-bottom: 108%}
+#logo-pp a{
+    width: 152px;
+    height: 89px;
+    background-size: contain;}
 }
 
 /*
